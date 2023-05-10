@@ -47,24 +47,24 @@ header {
 }
 
 .logo {
-  width: 25px;
-  height: 25px;
+  width: 25px !important;
+  height: 25px !important;
   border: 3px solid;
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 4px;
   margin-left: 20px;
-  position: relative;
+  padding: 0.5rem;
+  /* position: relative; */
   color: var(--secondary);
 }
 
 .logo-text {
-    color: var(--secondary);
-  position: absolute;
-  top: 12%;
-  left: 40%;
+  color: var(--secondary);
+  /* position: absolute; */
+  /* top: 12%;
+  left: 40%; */
 }
 
 nav {
@@ -75,7 +75,7 @@ nav {
 
 nav a {
   font-size: 0.8rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   letter-spacing: 2px;
   margin: 10px;
   transition: 0.4s ease-in-out;
@@ -161,7 +161,7 @@ main {
 
 #welcome-section {
   margin-top: 3rem;
-  height: 100vh;
+  height: calc(100vh - 6rem);
 }
 
 #welcome-section h1 {
@@ -176,7 +176,7 @@ main {
 /* ABOUT SECTION */
 .container-about {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   margin-top: 50px;
 }
 
@@ -187,6 +187,7 @@ main {
 .container-img {
   height: 30vw;
   transition: 0.5s ease-in-out 0ms;
+  position: relative;
 }
 
 .container-img * {
@@ -195,7 +196,6 @@ main {
   border-radius: 5px;
   position: relative;
 }
-
 
 .front-img {
   background-color: var(--secondary);
@@ -233,51 +233,60 @@ main {
 /* EDUCATION SECTION | EDU refer to EDUCATION */
 
 #education,
-#contact{
-    padding-right: 20%;
-    padding-left: 20%;
+#contact {
+  padding-right: 20%;
+  padding-left: 20%;
 }
 
-.container-edu{
-    padding: 2rem;
+.container-edu {
+  padding: 2rem;
 }
 
-.edu-title{
-    font-style: italic;
-    color: var(--secondary);
-    opacity: 90%;
+.edu-title {
+  font-style: italic;
+  color: var(--secondary);
+  opacity: 90%;
 }
 
-.container-edu li{
-    list-style: none;
-    margin: 15px 0;
+.container-edu li {
+  list-style: none;
+  margin: 15px 0;
 }
 
 /* PROJECT SECTION */
 
-.project-tile{
+.project-tile {
   width: 100%;
-  position: relative;
 }
 
-.container-project-img{
+.container-project-img {
   padding: 2rem;
 }
 
-.container-project-img img, .overlay-img{
-  border-radius: 5px;
+.container-project-img img,
+.overlay-img {
   width: 40vw;
   height: 23vw;
+  border-radius: 5px;
   transition: 0.4s ease-in-out 0ms;
 }
+.container-project-img img {
+  object-fit: cover;
+}
 
-.overlay-img{
+.overlay-img {
   background-color: var(--secondary);
   position: absolute;
   opacity: 60%;
 }
 
-.project-text{
+.li-project {
+  width: 100%;
+  height: 70vh ;
+  position: relative;
+}
+
+.project-text {
   width: 43vw;
   text-align: right;
   position: absolute;
@@ -285,12 +294,12 @@ main {
   right: 0%;
 }
 
-.text-title{
+.text-title {
   font-size: 1.5rem;
-  margin: 5px 0 15px
+  margin: 5px 0 15px;
 }
 
-.project-text p{
+.project-text p {
   background-color: var(--subcolor);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
@@ -299,47 +308,48 @@ main {
   font-size: 0.9rem;
 }
 
-.tech-stack{
+.tech-stack {
   opacity: 70%;
   width: 30vw;
   position: absolute;
   right: 0%;
 }
 
-.tech::after{
+.tech::after {
   content: "|";
   margin: 3px;
 }
 
-.tech-stack a{
+.tech-stack a {
   font-size: larger;
   margin: 0 10px;
 }
 
 /* CONTACT */
 
-#contact{
-  text-align: center;
+#contact {
   height: 100vh;
 }
 
-.container-contact{
+.container-contact {
+  text-align: center;
   padding: 10% 0;
 }
 
-.behind-email{
+.behind-email,
+#contact button {
   left: 37.5%;
 }
 
 /* FOOTER */
 
-footer{
+footer {
   height: 6rem;
   opacity: 60%;
   font-size: 0.9rem;
 }
 
-.footer{
+.footer {
   text-align: center;
 }
 
@@ -352,17 +362,220 @@ a:hover {
 /* profile image */
 .front-img:hover ,
 /* project-img */
-.overlay-img:hover{
+.overlay-img:hover {
   opacity: 0%;
 }
 
-.profile-img:hover{
-  transform: translate(5px, 5px);
+/* ANIMATION TRANSLATE */
+.social-icons i:hover,
+.container-img:hover,
+button:hover {
+  transform: translate(-5px, -5px);
 }
 
-/* ANIMATION TRANSLATE */
-.social-icons i:hover, 
-.container-img:hover,
-button:hover{
-    transform: translate(-5px, -5px);
+@media only screen and (max-width: 1024px) {
+  #welcome-section {
+    margin-top: 0;
   }
+  #welcome-section h1 {
+    font-size: 4rem;
+  }
+
+  .project-text {
+    top: -3%;
+    width: 55vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .social-icons {
+    visibility: hidden;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  #welcome-section h1 {
+    font-size: 3rem;
+  }
+
+  .welcome-desc {
+    width: auto;
+  }
+
+  .container-about {
+    display: block;
+    margin: 10px;
+  }
+
+  /* image profile */
+  .container-img {
+    width: 35vw;
+    margin: 20px 0;
+  }
+  .container-img * {
+    height: 45vw;
+    width: 45vw;
+    left: 50%;
+  }
+
+  .front-img {
+    background-color: var(--secondary);
+    opacity: 30%;
+    z-index: 2;
+  }
+
+  .profile-img {
+    bottom: 45vw;
+    z-index: 1;
+  }
+
+  .behind-img {
+    border: 2px solid var(--secondary);
+    bottom: 89.5vw;
+    left: calc(50% + 5px);
+  }
+
+  #education,
+  #contact {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  /* project */
+
+  .li-project {
+    margin: 2rem;
+    width: calc(100% - 30px);
+    height: 60vh;
+  }
+
+  .container-project-img {
+    padding: 0px;
+  }
+
+  .container-project-img img {
+    width: 100%;
+    height: 60vh;
+  }
+  .overlay-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay-img {
+    background-color: var(--primary);
+    opacity: 95%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: block;
+  }
+  .overlay-img:hover {
+    opacity: 90%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  /*  */
+  .project-text {
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+  }
+
+  .text-title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .project-text p {
+    width: 80vw;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 0;
+    font-size: 0.9rem;
+    line-height: 25px;
+  }
+
+  .tech-stack {
+    font-size: 0.7rem;
+    width: 70vh;
+    position: static;
+  }
+
+  .tech::after {
+    content: "|";
+    margin: 3px;
+  }
+
+  .tech-stack a {
+    font-size: large;
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    height: auto;
+  }
+  .logo {
+    visibility: hidden;
+    position: absolute;
+  }
+  #navbar {
+    flex-direction: column;
+  }
+
+  #welcome-section,
+  #about,
+  #education,
+  #projects,
+  #contact {
+    padding-top: 10rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-desc{
+    font-size: 0.9rem;
+  }
+
+  .container-about{
+    margin: 0;
+  }
+
+  .text-about{
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .container-list{
+    font-size: 0.8rem;
+  }
+
+  .container-edu{
+    padding: 0;
+  }
+
+  .li-project {
+    margin: 2rem 0;
+    width: calc(100%);
+    height: 100vh;
+  }
+  .container-project-img img {
+    width: 100%;
+    height: 100vh;
+  }
+  .overlay-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tech-stack{
+    width: 50vw;
+  }
+}

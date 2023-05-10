@@ -64,11 +64,7 @@
         <section id="about">
             <h1><code>01. </code> About Me</h1>
             <div class="container-about">
-                <div class="container-img">
-                    <div class="front-img"></div>
-                    <img class="profile-img" src="static/profile.png" alt="profile picture">
-                    <div class="behind-img"></div>
-                </div>
+                
                 <div class="text-about">
                     <p>
                         I am a graduate of Sufism and Psychotherapy who received a scholarship from the Ministry of
@@ -99,6 +95,12 @@
                         </ul>
                     </div>
                 </div>
+
+                <div class="container-img">
+                    <div class="front-img"></div>
+                    <img class="profile-img" src="static/profile.png" alt="profile picture">
+                    <div class="behind-img"></div>
+                </div>
             </div>
         </section>
 
@@ -127,43 +129,83 @@
         <section id="projects">
             <h1><code>03. </code> Some Thing I've Built</h1>
             <div class="project-tile">
-                <a href="https://youtu.be/V0d6w4pyTxk" target="_blank">
-                    <div class="container-project-img">
-                        <div class="overlay-img"></div>
-                        <img src="static/dapurSolo.png" alt="dapursolo.com" />
+                <div class="li-project">
+                    <a href="https://youtu.be/V0d6w4pyTxk" target="_blank">
+                        <div class="container-project-img">
+                            <div class="overlay-img"></div>
+                            <img src="static/dapurSolo.png" alt="dapursolo.com" />
+                        </div>
+                    </a>
+                    <div class="project-text">
+                        <code>Featured Project</code>
+                        <h4 class="text-title">Dapur Solo</h4>
+                        <div class="text-desc">
+                            <p>
+                                A web-based application that allows customers to order Indonesian food, drinks, and snacks
+                                anytime and
+                                anywhere. The website was created in 1.5 months for developing the API and implementing the
+                                frontend. In this website,
+                                users can register, login, filter products, and checkout their orders. The application is
+                                also responsive across all
+                                devices.
+                            </p>
+                            <div class="tech-stack">
+                                <code class="tech">VS Code</code>
+                                <code class="tech">JavaScript</code>
+                                <code class="tech">mongoose</code>
+                                <code class="tech">bcrypt</code>
+                                <code class="tech">JWT</code>
+                                <code class="tech">React.js</code>
+                                <code class="tech">tailwindcss</code>
+                                <code class="tech">axios</code>
+                                <code class="tech">redux</code>
+                                <br />
+                                <br />
+                                <a href="https://github.com/Ikhor03/POS-system-FE" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://youtu.be/V0d6w4pyTxk" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </a>
-                <div class="project-text">
-                    <code>Featured Project</code>
-                    <h4 class="text-title">Dapur Solo</h4>
-                    <div class="text-desc">
-                        <p>
-                            A web-based application that allows customers to order Indonesian food, drinks, and snacks
-                            anytime and
-                            anywhere. The website was created in 1.5 months for developing the API and implementing the
-                            frontend. In this website,
-                            users can register, login, filter products, and checkout their orders. The application is
-                            also responsive across all
-                            devices.
-                        </p>
-                        <div class="tech-stack">
-                            <code class="tech">VS Code</code>
-                            <code class="tech">JavaScript</code>
-                            <code class="tech">mongoose</code>
-                            <code class="tech">bcrypt</code>
-                            <code class="tech">JWT</code>
-                            <code class="tech">React js</code>
-                            <code class="tech">tailwindcss</code>
-                            <code class="tech">axios</code>
-                            <code class="tech">redux</code>
-                            <br />
-                            <br />
-                            <a href="https://github.com/Ikhor03/POS-system-FE" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://youtu.be/V0d6w4pyTxk" target="_blank">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
+                </div>
+                <div class="li-project">
+                    <a href="https://youtu.be/V0d6w4pyTxk" target="_blank">
+                        <div class="container-project-img">
+                            <div class="overlay-img"></div>
+                            <img src="static/dapurSolo.png" alt="dapursolo.com" />
+                        </div>
+                    </a>
+                    <div class="project-text">
+                        <code>Featured Project</code>
+                        <h4 class="text-title">Sample</h4>
+                        <div class="text-desc">
+                            <p>
+                                A web-based application that allows customers to order Indonesian food, drinks, and snacks
+                                anytime and anywhere. The website was created in 1.5 months for developing the API and implementing the
+                                frontend.
+                            </p>
+                            <div class="tech-stack">
+                                <code class="tech">VS Code</code>
+                                <code class="tech">JavaScript</code>
+                                <code class="tech">mongoose</code>
+                                <code class="tech">bcrypt</code>
+                                <code class="tech">JWT</code>
+                                <code class="tech">React.js</code>
+                                <code class="tech">tailwindcss</code>
+                                <code class="tech">axios</code>
+                                <code class="tech">redux</code>
+                                <br />
+                                <br />
+                                <a href="https://github.com/Ikhor03/POS-system-FE" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://youtu.be/V0d6w4pyTxk" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,19 +216,17 @@
             <div class="container-contact">
                 <code style="font-size: 14px;">04. what's next?</code>
                 <h1 style="font-size: 2rem;">Get in Touch</h1>
-                <p style="opacity: 70%; margin: 20px 0;">Thank you for visiting my portfolio website. If you're
-                    interested
-                    in my work or have any questions, please don't
-                    hesitate to reach out to me. I am always open to new opportunities and collaborations, so feel free
-                    to
-                    connect with me and let's build something
-                    great together!</p>
+                <p style="opacity: 70%; margin: 20px 0;">Thank you for visiting my portfolio website. 
+                    If you're interested in my work or have any questions, 
+                    please don't hesitate to reach out to me. 
+                    I am always open to new opportunities and collaborations, 
+                    so feel free to connect with me and let's build something great together!</p>
+                </div>
 
                 <a id="profile-link" href="mailto:imamkhoiri.jobs@gmail.com" target="_blank">
                     <div class="behind-email"></div>
                     <button><code>Hire me</code></button>
                 </a>
-            </div>
         </section>
 
     </main>
