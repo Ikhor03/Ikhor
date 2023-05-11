@@ -5,6 +5,7 @@
   <a href="https://github.com/Ikhor03/Dapur-Solo-FE.git">
     <img src="static/favicon-i.png" alt="Logo" width="80" height="80">
   </a>
+  </div>
 
 <h3 align="center">Ikhor-v1</h3>
 
