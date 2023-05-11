@@ -26,7 +26,7 @@ I stumbled upon Brittany Chiang's amazing [web portfolio](https://brittanychiang
 * HTML
 * CSS
 
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
