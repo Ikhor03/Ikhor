@@ -31,4 +31,4 @@ I stumbled upon Brittany Chiang's amazing [web portfolio](https://brittanychiang
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: img/kedai%20kopi.png
+[product-screenshot]: static/ikhor_v1.png
