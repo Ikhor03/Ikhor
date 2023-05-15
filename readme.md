@@ -11,7 +11,7 @@
 
   <p align="center">
     <br />
-    <a href="https://kedai-fialate.vercel.app/"><strong>Live Demo »</strong></a>
+    <a href="https://ikhor.vercel.app/"><strong>Live Demo »</strong></a>
   </p>
 
 <!-- ABOUT THE PROJECT -->
